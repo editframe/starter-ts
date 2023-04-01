@@ -6,9 +6,9 @@ process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
 
 const main = async () => {
   const editframe = new Editframe({
-    clientId: process.env.EDITFRAME_CLIENT_ID,
     host: "https://api.editframe.test",
     token: process.env.EDITFRAME_API_TOKEN,
+    develop: true, // set to develop mode
   });
 
   const composition = await editframe.videos.new({
@@ -21,7 +21,7 @@ const main = async () => {
 
   // make your video here
 
-  await composition.encode();
+  await composition.encodeSync();
 };
 
 main();
