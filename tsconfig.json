@@ -17,9 +17,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strictNullChecks": false,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "es5"
   },
   "exclude": ["**/node_modules"]
 }
-

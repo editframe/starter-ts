@@ -1,19 +1,19 @@
-# Editframe Typescript Example Template
+# Editframe Typescript Starter
 
-Clone this repo as a starting point for your example projects for potential clients.
+Clone this repo as a starting point for your Editframe project.
 
 ## Installation
 
-```
-cp .env.default .env
-yarn install
-yarn build
+```bash
+npm install
 ```
 
-and replace the dummy values with real ones.
+## Configuration
+
+Edit the .env file to set your Editframe API token
 
 ## Usage
 
-```
-node dist/index.js
+```bash
+npm run start
 ```

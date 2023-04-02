@@ -2,11 +2,9 @@ import { Editframe } from "@editframe/editframe-js";
 import dotenv from "dotenv";
 
 dotenv.config();
-process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
 
 const main = async () => {
   const editframe = new Editframe({
-    host: "https://api.editframe.test",
     token: process.env.EDITFRAME_API_TOKEN,
     develop: true, // set to develop mode
   });
@@ -19,7 +17,7 @@ const main = async () => {
     duration: 10,
   });
 
-  // make your video here
+  // add your video layers, here
 
   await composition.encodeSync();
 };
